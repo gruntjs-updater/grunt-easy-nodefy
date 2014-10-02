@@ -1,0 +1,44 @@
+{
+  "name": "grunt-easy-nodefy",
+  "description": "Grunt task to convert AMD module to commonjs format (using easy-nodefy).",
+  "version": "0.0.1",
+  "homepage": "https://github.com/easy-js/grunt-easy-nodefy",
+  "author": {
+    "name": "Jarid Margolin",
+    "email": "jarid@firstopinionapp.com"
+  },
+  "scripts": {
+    "test": "grunt"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/easy-js/grunt-easy-nodefy.git"
+  },
+  "bugs": {
+    "url": "https://github.com/easy-js/grunt-easy-nodefy/issues"
+  },
+  "engines": {
+    "node": ">= 0.10.24"
+  },
+  "dependencies": {
+    "async": "~0.9.0",
+    "easy-nodefy": "~0.3.2",
+    "underscore": "~1.6.0"
+  },
+  "devDependencies": {
+    "grunt-contrib-jshint": "~0.6.0",
+    "grunt-contrib-clean": "~0.4.0",
+    "grunt-contrib-nodeunit": "~0.2.0",
+    "grunt": "~0.4.2"
+  },
+  "peerDependencies": {
+    "grunt": "~0.4.2"
+  },
+  "keywords": [
+    "gruntplugin",
+    "aws",
+    "s3",
+    "static site",
+    "deploy"
+  ]
+}
