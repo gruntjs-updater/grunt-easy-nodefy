@@ -1,7 +1,7 @@
 {
   "name": "grunt-easy-nodefy",
   "description": "Grunt task to convert AMD module to commonjs format (using easy-nodefy).",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "homepage": "https://github.com/easy-js/grunt-easy-nodefy",
   "author": {
     "name": "Jarid Margolin",
