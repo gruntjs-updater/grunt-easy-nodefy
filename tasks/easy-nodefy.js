@@ -33,14 +33,10 @@ module.exports = function(grunt) {
 
     // options/defaults
     var options = this.options({
-      baseDir: '',
+      baseDir: process.cwd(),
       paths: {},
       map: {}
     });
-
-    // baseDir needs to be an absolute path of
-    // where the baseDir lives.
-    options.baseDir = path.join(process.cwd(), options.baseDir);
 
     // loop over each of the file objects and convert
     var convertFiles = function (files, callback) {
@@ -62,12 +58,8 @@ module.exports = function(grunt) {
     // convert file each file. first need to determine
     // the correct output path.
     var convertFile = function (srcPath, outputPath, isExpanded, callback) {
-      if (!isExpanded) {
-        outputPath = path.join(outputPath, srcPath);
-      }
-
       var nodefyOptions = _.extend({
-        outputPath: outputPath
+        outputPath: isExpanded ? outputPath : path.join(outputPath, srcPath)
       }, options);
 
       nodefy.convertFile(srcPath, nodefyOptions, callback);
